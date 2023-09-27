@@ -23,11 +23,7 @@ const ListingPage = async () => {
 
   return (
     <ClientOnly>
-      <FavoritesClient
-        listings={listings}
-        // @ts-ignore
-        currentUser={currentUser}
-      />
+      <FavoritesClient listings={listings} currentUser={currentUser} />
     </ClientOnly>
   );
 };
